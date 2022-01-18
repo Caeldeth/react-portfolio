@@ -4,11 +4,13 @@
 ![Lines of code](https://img.shields.io/tokei/lines/github/caeldeth/react-portfolio?style=plastic)
 ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/caeldeth/react-portfolio/react?style=plastic)
 ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/caeldeth/react-portfolio/react-dom?style=plastic)
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/caeldeth/react-portfolio/react-dom-router?style=plastic)
 ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/caeldeth/react-portfolio/react-scripts?style=plastic)
 ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/caeldeth/react-portfolio/web-vitals?style=plastic)
 ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/caeldeth/react-portfolio/@emotion/react?style=plastic)
 ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/caeldeth/react-portfolio/@emotion/styled?style=plastic)
 ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/caeldeth/react-portfolio/@mui/material?style=plastic)
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/caeldeth/react-portfolio/@mui/icons-material?style=plastic)
 ![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/caeldeth/react-portfolio/dev/gh-pages?style=plastic)  
 
 ![GitHub](https://img.shields.io/github/license/caeldeth/react-portfolio?style=for-the-badge)
