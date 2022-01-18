@@ -14,15 +14,40 @@ function Nav() {
                             component="div"
                             noWrap
                             sx={{ mr: 2, ml: 2, display: { xs: "none", md: "flex" } }}
+                            color="white"
                         >
                             Thomas Cole
                         </Typography>
                     </Toolbar>
                     <Toolbar>
-                        <Button sx={{ color: "white" }} variant="text" href="/about">About</Button>
-                        <Button sx={{ color: "white" }} variant="text" href="/portfolio">Portfolio</Button>
-                        <Button sx={{ color: "white" }} variant="text" href="/resume">Resume</Button>
-                        <Button sx={{ color: "white" }} variant="text" href="/contact">Contact</Button>
+                        <Button sx={{ 
+                            color: "white",                 
+                            '&:hover': { color: 'yellow', }, }} 
+                            variant="text" 
+                            href="/about">
+                                About
+                        </Button>
+                        <Button sx={{ 
+                            color: "white",                 
+                            '&:hover': { color: 'yellow', }, }} 
+                            variant="text"
+                            href="/portfolio">
+                            Portfolio
+                        </Button>
+                        <Button sx={{ 
+                            color: "white",                 
+                            '&:hover': { color: 'yellow', }, }} 
+                            variant="text"
+                            href="/resume">
+                            Resume
+                        </Button>
+                        <Button sx={{ 
+                            color: "white",                 
+                            '&:hover': { color: 'yellow', }, }} 
+                            variant="text"
+                            href="/contact">
+                            Contact
+                        </Button>
                     </Toolbar>
                 </Stack>
             </Box>
