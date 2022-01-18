@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.18e396c2.css",
-    "main.js": "/static/js/main.30de46bf.js",
-    "static/js/787.8c081f57.chunk.js": "/static/js/787.8c081f57.chunk.js",
-    "static/media/header-background.jpg": "/static/media/header-background.cb4ea4bc9c65dc8a5941.jpg",
-    "static/media/finder.png": "/static/media/finder.f73610ed5e41b8da8d8e.png",
-    "static/media/runbuddy.png": "/static/media/runbuddy.4523c8df9da64c880997.png",
-    "static/media/horiseon.jpg": "/static/media/horiseon.c222c35bed2160b02ef5.jpg",
-    "static/media/bloggrs.png": "/static/media/bloggrs.e467fcc88c06fd6ee19c.png",
-    "static/media/capital.png": "/static/media/capital.cedbbf394d25e6588eda.png",
-    "static/media/tempest.jpg": "/static/media/tempest.dd959aa880395f093f48.jpg",
-    "static/media/quiz.jpg": "/static/media/quiz.431fd6182665c23081d1.jpg",
-    "static/media/fast.jpg": "/static/media/fast.b1c83b2f23409e6b21af.jpg",
-    "static/media/task-goblin.png": "/static/media/task-goblin.86a8c2b78266ed7a4de7.png",
-    "static/media/redfox.png": "/static/media/redfox.b1a551cec26bef2a3b5e.png",
-    "static/media/notely.jpg": "/static/media/notely.84c4c8f200b8d273c6dc.jpg",
-    "static/media/staffmatrix.png": "/static/media/staffmatrix.92170ffab3ec900a4bc3.png",
-    "index.html": "/index.html",
-    "main.18e396c2.css.map": "/static/css/main.18e396c2.css.map",
-    "main.30de46bf.js.map": "/static/js/main.30de46bf.js.map",
-    "787.8c081f57.chunk.js.map": "/static/js/787.8c081f57.chunk.js.map"
+    "main.css": "/react-portfolio/static/css/main.18e396c2.css",
+    "main.js": "/react-portfolio/static/js/main.fc3bb5a6.js",
+    "static/js/787.8c081f57.chunk.js": "/react-portfolio/static/js/787.8c081f57.chunk.js",
+    "static/media/header-background.jpg": "/react-portfolio/static/media/header-background.cb4ea4bc9c65dc8a5941.jpg",
+    "static/media/finder.png": "/react-portfolio/static/media/finder.f73610ed5e41b8da8d8e.png",
+    "static/media/runbuddy.png": "/react-portfolio/static/media/runbuddy.4523c8df9da64c880997.png",
+    "static/media/horiseon.jpg": "/react-portfolio/static/media/horiseon.c222c35bed2160b02ef5.jpg",
+    "static/media/bloggrs.png": "/react-portfolio/static/media/bloggrs.e467fcc88c06fd6ee19c.png",
+    "static/media/capital.png": "/react-portfolio/static/media/capital.cedbbf394d25e6588eda.png",
+    "static/media/tempest.jpg": "/react-portfolio/static/media/tempest.dd959aa880395f093f48.jpg",
+    "static/media/quiz.jpg": "/react-portfolio/static/media/quiz.431fd6182665c23081d1.jpg",
+    "static/media/fast.jpg": "/react-portfolio/static/media/fast.b1c83b2f23409e6b21af.jpg",
+    "static/media/task-goblin.png": "/react-portfolio/static/media/task-goblin.86a8c2b78266ed7a4de7.png",
+    "static/media/redfox.png": "/react-portfolio/static/media/redfox.b1a551cec26bef2a3b5e.png",
+    "static/media/notely.jpg": "/react-portfolio/static/media/notely.84c4c8f200b8d273c6dc.jpg",
+    "static/media/staffmatrix.png": "/react-portfolio/static/media/staffmatrix.92170ffab3ec900a4bc3.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.18e396c2.css.map": "/react-portfolio/static/css/main.18e396c2.css.map",
+    "main.fc3bb5a6.js.map": "/react-portfolio/static/js/main.fc3bb5a6.js.map",
+    "787.8c081f57.chunk.js.map": "/react-portfolio/static/js/787.8c081f57.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.18e396c2.css",
-    "static/js/main.30de46bf.js"
+    "static/js/main.fc3bb5a6.js"
   ]
 }
