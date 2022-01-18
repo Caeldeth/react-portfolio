@@ -4,7 +4,7 @@ import ContactModal from './components/ContactModal/contactModal';
 import Footer from './components/Footer/footer';
 import Nav from './components/Navigation/nav';
 import Portfolio from './components/Portfolio/portfolio';
-import ProjectCard from './components/ProjectCard/projectCard'
+import ProjectCard from './components/ProjectCard/projectCard';
 import Resume from './components/Resume/resume';
 import './index.css'
 
