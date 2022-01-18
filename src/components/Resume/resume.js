@@ -40,6 +40,7 @@ function Resume() {
                     display: "flex",
                     justifyContent: "center",
                     backgroundColor: "#202020",
+                    mt: 2,
                 }}
             >
                 <Card sx={{ width: "85%", backgroundColor: "#004953" }}>
@@ -118,8 +119,8 @@ function Resume() {
                     </CardActions>
                 </Card>
             </Box>
-            <Box sx={{ width: 0.75, margin: "auto", mt: 2 }}>
-                <Accordion defaultExpanded sx={{ background: "#202020", mb: 5 }}>
+            <Box sx={{ width: 0.75, margin: "auto", mt: 2, mb: 4 }}>
+                <Accordion defaultExpanded sx={{ background: "#202020", }}>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel1a-content"
