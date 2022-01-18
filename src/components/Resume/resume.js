@@ -120,7 +120,7 @@ function Resume() {
                 </Card>
             </Box>
             <Box sx={{ width: 0.75, margin: "auto", mt: 2, mb: 4 }}>
-                <Accordion defaultExpanded sx={{ background: "#202020", }}>
+                <Accordion defaultExpanded sx={{ background: "#202020", mb: 5 }}>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel1a-content"
