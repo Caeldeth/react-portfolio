@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Stack, Toolbar, Typography, Box, Button } from "@mui/material";
 import bg from "../../assets/cover/header-background.jpg"
 
@@ -14,36 +13,36 @@ function Nav() {
                             component="div"
                             noWrap
                             sx={{ mr: 2, ml: 2, display: { xs: "none", md: "flex" } }}
-                            color="white"
+                            color="#FFFFFF"
                         >
                             Thomas Cole
                         </Typography>
                     </Toolbar>
                     <Toolbar>
                         <Button sx={{ 
-                            color: "white",                 
-                            '&:hover': { color: 'yellow', }, }} 
+                            color: "#FFFFFF",                 
+                            '&:hover': { color: '#FFBF00', }, }} 
                             variant="text" 
                             href="/about">
                                 About
                         </Button>
                         <Button sx={{ 
-                            color: "white",                 
-                            '&:hover': { color: 'yellow', }, }} 
+                            color: "#FFFFFF",                 
+                            '&:hover': { color: '#FFBF00', }, }} 
                             variant="text"
                             href="/portfolio">
                             Portfolio
                         </Button>
                         <Button sx={{ 
-                            color: "white",                 
-                            '&:hover': { color: 'yellow', }, }} 
+                            color: "#FFFFFF",                 
+                            '&:hover': { color: '#FFBF00', }, }} 
                             variant="text"
                             href="/resume">
                             Resume
                         </Button>
                         <Button sx={{ 
-                            color: "white",                 
-                            '&:hover': { color: 'yellow', }, }} 
+                            color: "#FFFFFF",                 
+                            '&:hover': { color: '#FFBF00', }, }} 
                             variant="text"
                             href="/contact">
                             Contact

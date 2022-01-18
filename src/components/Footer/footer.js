@@ -10,19 +10,19 @@ function Footer() {
         <Box sx={{ backgroundImage: `url(${bg})` }}>
         <Stack direction="row" justifyContent="space-evenly" sx={{ alignItems: 'center' }} >
             <Toolbar>
-            <Paper elevation={0} sx={{ mr: 10, ml: 10, mt: .5, }}>
+            <Paper elevation={0} sx={{ mr: 10, ml: 10, mt: .5, backgroundColor: "transparent" }}>
                     <a href="mailto:tacolejr@gmail.com" target="_blank" rel="noreferrer">
-                        <EmailIcon sx={{ fontSize: 50, border: 1, '&:hover': { color: 'yellow', }, }} />
+                        <EmailIcon sx={{ fontSize: 50, border: 1, color: "#43b3ae", '&:hover': { color: '#FFBF00', } }} />
                     </a>
                 </Paper>
-                <Paper elevation={0} sx={{ mr: 10, ml: 10, mt: .5, }}>
+                <Paper elevation={0} sx={{ mr: 10, ml: 10, mt: .5, backgroundColor: "transparent" }}>
                     <a href="http://github.com/caeldeth" target="_blank" rel="noreferrer">
-                        <GitHubIcon sx={{ fontSize: 50, border: 1, '&:hover': { color: 'yellow', }, }} />
+                        <GitHubIcon sx={{ fontSize: 50, border: 1, color: "#43b3ae", '&:hover': { color: '#FFBF00', } }} />
                     </a>
                 </Paper>
-                <Paper elevation={0} sx={{ mr: 10, ml: 10, mt: .5, }}>
+                <Paper elevation={0} sx={{ mr: 10, ml: 10, mt: .5, backgroundColor: "transparent" }}>
                     <a href="http://linkedin.com" target="_blank" rel="noreferrer">
-                        <LinkedInIcon sx={{ fontSize: 50, border: 1, '&:hover': { color: 'yellow', }, }} />
+                        <LinkedInIcon sx={{ fontSize: 50, border: 1, color: "#43b3ae", '&:hover': { color: '#FFBF00', } }} />
                     </a>
                 </Paper>
             </Toolbar>

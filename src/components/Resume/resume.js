@@ -1,8 +1,5 @@
 import { React } from "react";
 import {
-    Accordion,
-    AccordionSummary,
-    AccordionDetails,
     Typography,
     Box,
     List,
@@ -15,68 +12,137 @@ import {
     Grid,
     Button,
     Tooltip,
+    Accordion,
+    AccordionDetails,
+    AccordionSummary,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import discordIcon from '../../assets/images/discord.png'
+import discordIcon from "../../assets/images/discord.png";
 
 const onDownload = () => {
     const link = document.createElement("a");
-    link.download = 'sample.pdf'
+    link.download = "sample.pdf";
     link.href = "../../assets/images/sample.pdf";
     link.click();
-}
+};
 
 function Resume() {
     return (
         <section>
-            <Box sx={{ width: 0.9, margin: "auto", display: "flex", justifyContent: "center", }}>
-                <Card sx={{ width: "85%" }}>
+            <Box
+                sx={{
+                    width: 0.9,
+                    margin: "auto",
+                    display: "flex",
+                    justifyContent: "center",
+                    backgroundColor: "#202020",
+                }}
+            >
+                <Card sx={{ width: "85%", backgroundColor: "#004953" }}>
                     <CardContent>
-                        <Typography align="center" variant="h5" component="div">Thomas Cole</Typography>
-                        <Typography align="center" variant="body2" color="text.secondary">Contact Information</Typography>
+                        <Typography align="center" variant="h5" component="div" sx={{ color: "#FFFFFF" }}>
+                            Thomas Cole
+                        </Typography>
+                        <Typography align="center" variant="body2" sx={{ color: "#FFFFFF" }}>
+                            Contact Information
+                        </Typography>
                     </CardContent>
                     <CardActions>
-                    <Box sx={{width: "100%"}}>
-                        <Grid container spacing={1} alignItems="center" justifyContent="space-around">
-                            <Grid item xs={12} alignItems="center">
-                            <Tooltip title="Please email for a complete resume" placement="top">
-                            <Button onClick={onDownload} sx={{margin: "0 auto", display: "block"}}>Download Resume</Button>
-                            </Tooltip>
+                        <Box sx={{ width: "100%" }}>
+                            <Grid container spacing={1} alignItems="center" justifyContent="space-around">
+                                <Grid item xs={12} alignItems="center">
+                                    <Tooltip title="Please email for a complete resume" placement="top">
+                                        <Button
+                                            onClick={onDownload}
+                                            sx={{
+                                                margin: "0 auto",
+                                                display: "block",
+                                                color: "#FFFFFF",
+                                                "&:hover": { color: "#FFBF00" },
+                                            }}
+                                        >
+                                            Download Sample resume
+                                        </Button>
+                                    </Tooltip>
+                                </Grid>
+                                <Grid item xs={2}>
+                                    <Typography align="left" sx={{ color: "#FFFFFF" }}>
+                                        <LocalPhoneIcon
+                                            sx={{ position: "relative", top: "5px", bottom: "5px", color: "#FFFFFF" }}
+                                        />
+                                        612-361-9755
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={2}>
+                                    <Typography align="center" sx={{ color: "#FFFFFF" }}>
+                                        <EmailIcon
+                                            sx={{ position: "relative", top: "5px", bottom: "5px", color: "#FFFFFF" }}
+                                        />
+                                        tacolejr@gmail.com
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={2}>
+                                    <Typography align="center" sx={{ color: "#FFFFFF" }}>
+                                        <GitHubIcon
+                                            sx={{ position: "relative", top: "5px", bottom: "5px", color: "#FFFFFF" }}
+                                        />
+                                        Caeldeth
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={2}>
+                                    <Typography align="center" sx={{ color: "#FFFFFF" }}>
+                                        <LinkedInIcon
+                                            sx={{ position: "relative", top: "5px", bottom: "5px", color: "#FFFFFF" }}
+                                        />
+                                        LinkedIn.com
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={2}>
+                                    <Typography align="right" sx={{ color: "#FFFFFF" }}>
+                                        <img
+                                            width="24"
+                                            height="24"
+                                            src={discordIcon}
+                                            alt="discord"
+                                            style={{ right: 2, position: "relative", top: "7px", bottom: "7px" }}
+                                        />
+                                        discordId
+                                    </Typography>
+                                </Grid>
                             </Grid>
-                            <Grid item xs={2}>
-                            <Typography><LocalPhoneIcon/>555-555-5555</Typography>
-                            </Grid>
-                            <Grid item xs={2}>
-                            <Typography><EmailIcon/>tacolejr@gmail.com</Typography>
-                            </Grid>
-                            <Grid item xs={2}>
-                            <Typography><GitHubIcon/>Caeldeth</Typography>
-                            </Grid>
-                            <Grid item xs={2}>
-                            <Typography><LinkedInIcon/>LinkedIn.com</Typography>
-                            </Grid>
-                            <Grid item xs={2}>
-                            <Typography><img width="24" height="24" src={discordIcon} alt="discord"/>discordId</Typography>
-                            </Grid>
-                        </Grid>
-                    </Box>
+                        </Box>
                     </CardActions>
                 </Card>
             </Box>
-            <Box sx={{ width: 0.75, margin: "auto" }}>
-                <Accordion defaultExpanded>
+            <Box sx={{ width: 0.75, margin: "auto", mt: 2 }}>
+                <Accordion defaultExpanded sx={{ background: "#202020", mb: 5 }}>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel1a-content"
                         id="panel1a-header"
+                        sx={{
+                            backgroundColor: "#264348",
+                            color: "#FFFFFF",
+                            borderBottom: "1px solid #12738E",
+                            borderColor: "#87cefa",
+                            marginBottom: -3,
+                            borderRadius: "30px 0px 30px 0",
+                            minHeight: 56,
+                        }}
                     >
                         <Typography>Summary</Typography>
                     </AccordionSummary>
-                    <AccordionDetails>
+                    <AccordionDetails
+                        sx={{
+                            backgroundColor: "#71797E",
+                            padding: 4,
+                            color: "#FFFFFF",
+                        }}
+                    >
                         <Typography>
                             Self-motivated project manager with over 4 years of experience managing multiple projects
                             simultaneously. Comfortable presenting to executives and front-line associates, leveraging
@@ -88,15 +154,30 @@ function Resume() {
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
-                <Accordion>
+                <Accordion sx={{ background: "#202020", mb: 5 }}>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel2a-content"
                         id="panel2a-header"
+                        sx={{
+                            backgroundColor: "#264348",
+                            color: "#FFFFFF",
+                            borderBottom: "1px solid #12738E",
+                            borderColor: "#87cefa",
+                            marginBottom: -3,
+                            borderRadius: "30px 0px 30px 0",
+                            minHeight: 56,
+                        }}
                     >
                         <Typography>Education</Typography>
                     </AccordionSummary>
-                    <AccordionDetails>
+                    <AccordionDetails
+                        sx={{
+                            backgroundColor: "#71797E",
+                            padding: 4,
+                            color: "#FFFFFF",
+                        }}
+                    >
                         <List>
                             <ListItem>
                                 <ListItemText
@@ -113,44 +194,74 @@ function Resume() {
                         </List>
                     </AccordionDetails>
                 </Accordion>
-                <Accordion>
+                <Accordion sx={{ background: "#202020", mb: 5 }}>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel3a-content"
                         id="panel3a-header"
+                        sx={{
+                            backgroundColor: "#264348",
+                            color: "#FFFFFF",
+                            borderBottom: "1px solid #12738E",
+                            borderColor: "#87cefa",
+                            marginBottom: -3,
+                            borderRadius: "30px 0px 30px 0",
+                            minHeight: 56,
+                        }}
                     >
                         <Typography>Skills</Typography>
                     </AccordionSummary>
-                    <AccordionDetails>
-                        <Chip label="Office 365/G Suite" color="primary" sx={{ margin: 1 }} />
-                        <Chip label="HTML 5/CSS" color="primary" sx={{ margin: 1 }} />
-                        <Chip label="Risk Management" color="primary" sx={{ margin: 1 }} />
-                        <Chip label="Process Improvement" color="primary" sx={{ margin: 1 }} />
-                        <Chip label="Emotional Intelligence" color="primary" sx={{ margin: 1 }} />
-                        <Chip label="Collaboration" color="primary" sx={{ margin: 1 }} />
-                        <Chip label="Jira/Confluence" color="primary" sx={{ margin: 1 }} />
-                        <Chip label="Javascript/Node" color="primary" sx={{ margin: 1 }} />
-                        <Chip label="Cost Management" color="primary" sx={{ margin: 1 }} />
-                        <Chip label="Automation" color="primary" sx={{ margin: 1 }} />
-                        <Chip label="Critical Thinking" color="primary" sx={{ margin: 1 }} />
-                        <Chip label="Conflict Resolution" color="primary" sx={{ margin: 1 }} />
-                        <Chip label="Git/Github" color="primary" sx={{ margin: 1 }} />
-                        <Chip label="XML" color="primary" sx={{ margin: 1 }} />
-                        <Chip label="Data Analysis" color="primary" sx={{ margin: 1 }} />
-                        <Chip label="Leadership" color="primary" sx={{ margin: 1 }} />
-                        <Chip label="Self-Confidence" color="primary" sx={{ margin: 1 }} />
-                        <Chip label="Planning" color="primary" sx={{ margin: 1 }} />
+                    <AccordionDetails
+                        sx={{
+                            backgroundColor: "#71797E",
+                            padding: 4,
+                            color: "#FFFFFF",
+                        }}
+                    >
+                        <Chip label="Office 365/G Suite" sx={{ margin: 1, backgroundColor: "#20b2aa", color: "white" }} />
+                        <Chip label="HTML 5/CSS" sx={{ margin: 1, backgroundColor: "#20b2aa", color: "white" }} />
+                        <Chip label="Risk Management" sx={{ margin: 1, backgroundColor: "#20b2aa", color: "white" }} />
+                        <Chip label="Process Improvement" sx={{ margin: 1, backgroundColor: "#20b2aa", color: "white" }} />
+                        <Chip label="Emotional Intelligence" sx={{ margin: 1, backgroundColor: "#20b2aa", color: "white" }} />
+                        <Chip label="Collaboration" sx={{ margin: 1, backgroundColor: "#20b2aa", color: "white" }} />
+                        <Chip label="Jira/Confluence" sx={{ margin: 1, backgroundColor: "#20b2aa", color: "white" }} />
+                        <Chip label="Javascript/Node" sx={{ margin: 1, backgroundColor: "#20b2aa", color: "white" }} />
+                        <Chip label="Cost Management" sx={{ margin: 1, backgroundColor: "#20b2aa", color: "white" }} />
+                        <Chip label="Automation" sx={{ margin: 1, backgroundColor: "#20b2aa", color: "white" }} />
+                        <Chip label="Critical Thinking" sx={{ margin: 1, backgroundColor: "#20b2aa", color: "white" }} />
+                        <Chip label="Conflict Resolution" sx={{ margin: 1, backgroundColor: "#20b2aa", color: "white" }} />
+                        <Chip label="Git/Github" sx={{ margin: 1, backgroundColor: "#20b2aa", color: "white" }} />
+                        <Chip label="XML" sx={{ margin: 1, backgroundColor: "#20b2aa", color: "white" }} />
+                        <Chip label="Data Analysis" sx={{ margin: 1, backgroundColor: "#20b2aa", color: "white" }} />
+                        <Chip label="Leadership" sx={{ margin: 1, backgroundColor: "#20b2aa", color: "white" }} />
+                        <Chip label="Self-Confidence" sx={{ margin: 1, backgroundColor: "#20b2aa", color: "white" }} />
+                        <Chip label="Planning" sx={{ margin: 1, backgroundColor: "#20b2aa", color: "white" }} />
                     </AccordionDetails>
                 </Accordion>
-                <Accordion>
+                <Accordion sx={{ background: "#202020", mb: 5 }}>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel4a-content"
                         id="panel4a-header"
+                        sx={{
+                            backgroundColor: "#264348",
+                            color: "#FFFFFF",
+                            borderBottom: "1px solid #12738E",
+                            borderColor: "#87cefa",
+                            marginBottom: -3,
+                            borderRadius: "30px 0px 30px 0",
+                            minHeight: 56,
+                        }}
                     >
                         <Typography>Professional Experience</Typography>
                     </AccordionSummary>
-                    <AccordionDetails>
+                    <AccordionDetails
+                        sx={{
+                            backgroundColor: "#71797E",
+                            padding: 4,
+                            color: "#FFFFFF",
+                        }}
+                    >
                         <List>
                             <ListItem>
                                 <ListItemText
@@ -264,38 +375,57 @@ function Resume() {
                         </List>
                     </AccordionDetails>
                 </Accordion>
-                <Accordion>
+                <Accordion sx={{ background: "#202020", mb: 3 }}>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel5a-content"
                         id="panel5a-header"
+                        sx={{
+                            backgroundColor: "#264348",
+                            color: "#FFFFFF",
+                            borderBottom: "1px solid #12738E",
+                            borderColor: "#87cefa",
+                            marginBottom: -3,
+                            borderRadius: "30px 0px 30px 0",
+                            minHeight: 56,
+                        }}
                     >
                         <Typography>Sample Projects</Typography>
                     </AccordionSummary>
-                    <AccordionDetails>
+                    <AccordionDetails
+                        sx={{
+                            backgroundColor: "#71797E",
+                            padding: 4,
+                            color: "#FFFFFF",
+                        }}
+                    >
                         <List>
                             <ListItem>
-                                <ListItemText
-                                    primary="Credit Card Decommission"
-                                ></ListItemText>
+                                <ListItemText primary="Credit Card Decommission"></ListItemText>
                             </ListItem>
                             <ListItem sx={{ ml: 4 }}>
                                 <Box>
-                                &ensp;•	Managed the sunset of a 20-year program of credit card acceptance throughout company<br/>
-                                &ensp;•	Expertly navigated vendor challenges<br/>
-                                &ensp;•	Weekly meetings with Executive Vice Presidents<br/>
+                                    &ensp;• Managed the sunset of a 20-year program of credit card acceptance throughout
+                                    company
+                                    <br />
+                                    &ensp;• Expertly navigated vendor challenges
+                                    <br />
+                                    &ensp;• Weekly meetings with Executive Vice Presidents
+                                    <br />
                                 </Box>
                             </ListItem>
                             <ListItem>
-                                <ListItemText
-                                    primary="WordPerfect to OpenText Extstream"
-                                ></ListItemText>
+                                <ListItemText primary="WordPerfect to OpenText Extstream"></ListItemText>
                             </ListItem>
                             <ListItem sx={{ ml: 4 }}>
                                 <Box>
-                                &ensp;•	Migrated legacy customer correspondence from DOS WordPerfect 5.1 to OpenText due to incompatibility with Windows Server 2019<br/>
-                                &ensp;•	3-year project with a $3m budget<br/>
-                                &ensp;•	Overcame multiple challenges uncovered with migrating 30-year-old software<br/>
+                                    &ensp;• Migrated legacy customer correspondence from DOS WordPerfect 5.1 to OpenText
+                                    due to incompatibility with Windows Server 2019
+                                    <br />
+                                    &ensp;• 3-year project with a $3m budget
+                                    <br />
+                                    &ensp;• Overcame multiple challenges uncovered with migrating 30-year-old software
+                                    <br />
                                 </Box>
                             </ListItem>
                         </List>

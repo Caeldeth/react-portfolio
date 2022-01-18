@@ -12,7 +12,7 @@ import './index.css'
 
 function App() {
   return (
-    <div>
+    <div style={{ background: "#202020" }}>
       <Nav></Nav>
       <main>
         <About></About>

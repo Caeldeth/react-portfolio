@@ -1,5 +1,5 @@
 import { React } from "react";
-import { Card, CardActions, CardActionArea, Button, CardMedia, Grid } from "@mui/material";
+import { Card, CardActions, CardActionArea, Button, CardMedia, Grid, Typography } from "@mui/material";
 import bg from "../../assets/images/task-goblin.png";
 function ProjectCard() {
     const projects = [
@@ -72,26 +72,28 @@ function ProjectCard() {
                     <Grid item xs={4} key={project.name}>
                         <Card
                             sx={{
-                                maxWidth: 350,
-                                "&:hover": { opacity: 0.7 },
+                                maxWidth: 400,
+                                "&:hover": { opacity: 0.7, border: 2, borderColor: "#FF69B4" },
+                                border: 2,
+                                borderColor: "#87cefa"
                             }}
                         >
                             <CardActionArea>
                                 <CardMedia component="img" height="200" image={bg} alt="green goblin" />
-                                <CardActions sx={{ display: 'flex', justifyContent: 'space-between'}}>
-                                    <p>{project.name}</p>
+                                <CardActions sx={{ display: 'flex', justifyContent: 'space-between', background: "#202020" }}>
+                                    <Typography variant="button" sx={{ color: "#FFFFFF" }}>{project.name}</Typography>
                                     <div sx={{ display: 'flex', width: "100%", flexDirection: 'row', justifyContent: 'space-around' }}>
                                     <Button href={project.deployedAt} 
                                         sx={{ 
-                                        color: "white",                 
-                                        '&:hover': { color: 'yellow', }, }} 
+                                        color: "#FFFFFF",                 
+                                        '&:hover': { color: '#FFBF00', }, }} 
                                         variant="text">
                                             Live App
                                     </Button>
                                     <Button href={project.githubRepo} 
                                         sx={{ 
-                                        color: "white",                 
-                                        '&:hover': { color: 'yellow', }, }} 
+                                        color: "#FFFFFF",                 
+                                        '&:hover': { color: '#FFBF00', }, }} 
                                         variant="text">
                                             GitHub
                                         </Button>
