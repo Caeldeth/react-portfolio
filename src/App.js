@@ -5,6 +5,7 @@ import Footer from './components/Footer/footer';
 import Header from './components/Header/header';
 import Nav from './components/Navigation/nav';
 import Portfolio from './components/Portfolio/portfolio';
+import ProjectCard from './components/ProjectCard/projectCard'
 import Resume from './components/Resume/resume';
 import './index.css'
 
@@ -20,7 +21,7 @@ function App() {
           <ProjectCard></ProjectCard>
         </Portfolio>
         <Resume></Resume>
-        <Contact></Contact>
+        <ContactModal></ContactModal>
       </main>
         <Footer></Footer>
     </div>
