@@ -12,6 +12,7 @@ import inotely from "../../assets/images/notely.jpg";
 import istaff from "../../assets/images/staffmatrix.png";
 import icapital from "../../assets/images/capital.png";
 import ifinder from "../../assets/images/finder.png";
+import isearch from "../../assets/images/search.png";
 
 function ProjectCard() {
     const projects = [
@@ -115,6 +116,15 @@ function ProjectCard() {
             image: ifinder,
             alt: "movie finder"
         },
+        {
+            name: "Google Book Search",
+            deployedAt: "https://hidden-earth-31394.herokuapp.com/",
+            githubRepo: "https://github.com/Caeldeth/book-search",
+            classId: "search",
+            image: isearch,
+            alt: "book search"
+        },
+
 /* Template
         {
             name: "",
