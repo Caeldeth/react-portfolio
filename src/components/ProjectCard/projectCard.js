@@ -13,6 +13,7 @@ import istaff from "../../assets/images/staffmatrix.png";
 import icapital from "../../assets/images/capital.png";
 import ifinder from "../../assets/images/finder.png";
 import isearch from "../../assets/images/search.png";
+import imantis from "../../assets/images/mantis-mocha.png"
 
 function ProjectCard() {
     const projects = [
@@ -124,7 +125,14 @@ function ProjectCard() {
             image: isearch,
             alt: "book search"
         },
-
+        {
+            name: "Mantis Mocha",
+            deployedAt: "https://mantismocha.herokuapp.com/",
+            githubRepo: "https://github.com/Ahmed-Sajjad111/mantis-mocha",
+            classId: "mantis",
+            image: imantis,
+            alt: "mocha the mantis"
+        },
 /* Template
         {
             name: "",
